@@ -37,4 +37,27 @@ class LinkedListNode {
       return kth
   }
 
-  console.log(KthtoLast(a, 3))
+//   console.log(KthtoLast(a, 3))
+
+  // a revised version that is less time complexity
+  //the flaw with the first version is that it requires two passes
+  // through the list, one to get the length and one to get the kth node.
+
+
+  function KthtoLast2(headNode, num){
+        let leftNode = headNode
+        let rightNode = headNode
+
+        for(i = 0; i < num - 1; i++){
+            rightNode = rightNode.next
+        }
+
+        while(rightNode.next){
+            leftNode = leftNode.next
+            rightNode = rightNode.next
+        }
+
+        return leftNode
+  }
+
+  console.log(KthtoLast2(a, 3))
