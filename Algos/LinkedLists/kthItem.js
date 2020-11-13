@@ -39,9 +39,10 @@ class LinkedListNode {
 
 //   console.log(KthtoLast(a, 3))
 
-  // a revised version that is less time complexity
-  //the flaw with the first version is that it requires two passes
-  // through the list, one to get the length and one to get the kth node.
+ // a revised version however time and space complexity are nearly
+ //the same 0(n) time and 0(1) space. The second might be slightly 
+ //faster in some cases. The difference is version 1 requires two
+ //passes while version 2 requires only one. 
 
 
   function KthtoLast2(headNode, num){
