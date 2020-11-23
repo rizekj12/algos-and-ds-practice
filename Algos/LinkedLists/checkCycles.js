@@ -13,8 +13,8 @@ class LinkedListNode {
     let fastRunner = firstNode
 
     while(fastRunner && fastRunner.next){
-        slowRunner = firstNode.next
-        fastRunner = firstNode.next.next
+        slowRunner = slowRunner.next
+        fastRunner = fastRunner.next.next
 
         if(fastRunner === slowRunner){
             return true
@@ -24,4 +24,22 @@ class LinkedListNode {
   }
 
 
-  
+  let a = new LinkedListNode("A")
+  let b = new LinkedListNode("B")
+  let c = new LinkedListNode("C")
+  let d = new LinkedListNode("D")
+  let e = new LinkedListNode("E")
+
+  a.next = b
+  b.next = c
+  c.next = d
+  d.next = b
+
+  let one = new LinkedListNode(1)
+  let two = new LinkedListNode(2)
+  let three = new LinkedListNode(3)
+
+  one.next = two
+  two.next = three
+
+console.log(checkCycle(one))
