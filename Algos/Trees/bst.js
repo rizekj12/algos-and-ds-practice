@@ -55,8 +55,10 @@ class BST {
     }
     return false
   }
+
 }
+
+
 
 let tree = new BST();
 
-console.log();
