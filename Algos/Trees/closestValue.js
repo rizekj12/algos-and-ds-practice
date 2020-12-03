@@ -1,4 +1,4 @@
-//make a function that accepts a tree and target number.
+//make a function that accepts a binary search tree and target number.
 //this function will find the value in tree closest to the target
 
 
