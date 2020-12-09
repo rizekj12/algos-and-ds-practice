@@ -20,6 +20,6 @@ return true
 
 }
 
-console.log(checkSquared([1,3,2,2], [4,4,9,1]))
+console.log(checkSquared([5,1,3,2], [4,9,1,25]))
 
 
